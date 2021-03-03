@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Dipu</title>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .home {
+            background-color: #FAF2E7;
+            height: 600px;
+        }
+
+        .home-image {
+            height: 600px;
+        }
+
+        .home-image img {
+            top: 120px;
+
+        }
+
+        .about-me {
+            height: 600px;
+
+        }
+
+        .services {
+            background-color: #FDF9F0;
+        }
+
+        .ul-color {
+            text-decoration: underline;
+            -webkit-text-decoration-color: red;
+            /* Safari */
+            text-decoration-color: red;
+        }
+
+        .s-item {
+            background-color: white;
+            width: 500px;
+
+        }
+
+        .s-img {
+            top: -50px;
+        }
+
+        .project {
+            background-color: #FAF2E7;
+        }
+
+        .project-h {
+            display: flex;
+            flex-direction: column;
+
+            height: 450px;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+
+        .rating>input {
+            display: none
+        }
+
+        .rating>label {
+            position: relative;
+            width: 1em;
+            font-size: 2vw;
+            color: #FFD600;
+            cursor: pointer;
+        }
+
+        .rating>label::before {
+            content: "\2605";
+            position: absolute;
+            opacity: 0
+        }
+
+        .rating>label:hover:before,
+        .rating>label:hover~label:before {
+            opacity: 1 !important
+        }
+
+        .rating>input:checked~label:before {
+            opacity: 1
+        }
+
+        .rating:hover>input:checked~label:before {
+            opacity: 0.4
+        }
+
+        .blog,
+        .b-card {
+            background-color: #FAF2E7;
+        }
+
+        .footer {
+            background-color: #FAF2E7;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Dipankar.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home +</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog +</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+    </section>
+
+    <section class="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex align-self-center  ">
+                    <div>
+
+
+                        <div class="hl1">
+                            <h1 class="ul-color">I'm Dipankar</h1>
+                            <p>Freelance Web & Mobile UI/UX Designer</p>
+                            <a href="#" class="btn btn-warning">Hire me</a>
+                        </div>
+                        <div class="hl2 mt-5">
+                            <ul class="navbar-nav  d-flex flex-row text-dark">
+                                <li>
+                                    <a class="nav-link text-dark h4 pe-2" href=" #"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark h4 pe-2" href="#"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark h4" href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 position-relative home-image">
+                    <img class="position-absolute border rounded " src="assets/images/banner-thumb.jpg" alt="port"
+                        height="500px">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="" class="about-me mt-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <img class="border rounded" src="assets/images/about-thumb.jpg" height="600px" alt="">
+                </div>
+                <div class="col-md-6 d-flex align-self-center">
+                    <div>
+
+                        <div class="abt-1 ">
+                            <h1 class="ul-color">About Me</h1>
+                            <p>Far any name to and can go yet seven pattern. The client wanted big could part. Answering
+                                has
+                                turn of on feedback of evils and all careful like is wasn't to their wanting,
+                                wellfeigned to
+                                almost herself they him several that peacefully, advised up, I away, what's entrance in.
+                                What
+                                calculus far doubting neuter.</p>
+
+                        </div>
+
+
+                        <div class="abt-2">
+                            <a class="btn btn-warning" href="#">View Work</a>
+                            <a class="btn btn-outline-warning" href="#">Download CV</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="services mt-5">
+        <div class="container">
+            <h1 class="fw-bold ul-color">Services</h1>
+            <div class="d-flex flex-wrap mt-5">
+
+                <div class="s-item border rounded  p-3 m-5 shadow position-relative ">
+                    <img class="position-absolute s-img" height="70" src="assets/images/seo.png" alt="">
+                    <h1>UX Research</h1>
+                    <p>The can the her immediately the a buttons generally, long get is from lthey in has or far is
+                        cache.</p>
+                </div>
+                <div class="s-item border rounded p-3 m-5 shadow position-relative">
+                    <img class="position-absolute s-img" height="70" src="assets/images/web-design.png" alt="">
+
+                    <h1>Web Development</h1>
+                    <p>The can the her immediately the a buttons generally, long get is from lthey in has or far is
+                        cache.</p>
+                </div>
+                <div class="s-item border rounded p-3 m-5 shadow position-relative">
+                    <img class="position-absolute s-img" height="70" src="assets/images/web-design (1).png" alt="">
+
+                    <h1>Web Design</h1>
+                    <p>The can the her immediately the a buttons generally, long get is from lthey in has or far is
+                        cache.</p>
+                </div>
+                <div class="s-item border rounded p-3 m-5 shadow position-relative">
+                    <img class="position-absolute s-img" height="70" src="assets/images/user-interface.png" alt="">
+
+                    <h1>App Design</h1>
+                    <p>The can the her immediately the a buttons generally, long get is from lthey in has or far is
+                        cache.</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section class="works mt-5">
+        <div class="container">
+            <h1 class="text-center ul-color ">Latest Works</h1>
+            <p class="text-center fw-light h5 ">Far any name to and can go yet seven pattern. The client wanted
+                big could part.
+                Answering has turn of on feedback of evils and all careful like is wasn't to their wanting,</p>
+
+            <div class="row my-5 ms-5  ">
+                <div class="col-md-3 ">
+                    <img src="assets/images/1.JPG" height="680" alt="">
+                </div>
+                <div class="col-md-9 ps-5">
+                    <div>
+                        <img src="assets/images/3.JPG" alt="">
+                    </div>
+                    <div class="d-flex">
+                        <img src="assets/images/4.JPG" alt="">
+                        <img class="ps-4" src="assets/images/5.JPG" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="project ">
+        <div class="container   project-h">
+
+            <h1>Have Any Project On Mind</h1>
+            <p>Far any name to and can go yet seven pattern. The client wanted big could part. Answering has turn of
+                on
+                feedback of evils and all careful like is wasn't to their wanting,</p>
+            <a class="btn btn-warning" href="#">Contact me</a>
+
+        </div>
+
+    </section>
+
+    <section class="clients mt-5">
+        <div class="container">
+            <h1 class="text-center ul-color ">My Client’s Saying</h1>
+            <p class="text-center fw-light h5 ">Far any name to and can go yet seven pattern. The client wanted big
+                could part. Answering has turn of on feedback of evils and all careful like is wasn't to their wanting,
+            </p>
+
+            <div class="row mt-5 ">
+                <div class="col-md-4">
+                    <div class="card shadow border rounded p-4" style="width: 25rem; height:450px">
+                        <img src="assets/images/client-1.png" width="100px" class="border rounded " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Andrew Gomez</h5>
+                            <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label
+                                    for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label
+                                    for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label
+                                    for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label
+                                    for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label
+                                    for="1">☆</label>
+                            </div>
+                            <p>Envaro customer</p>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias optio
+                                magnam voluptatibus placeat repellendus praesentium minus, beatae, ipsa aliquam
+                                laudantium odit eum iste assumenda rem!</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4" style="width: 25rem; height:450px">
+                        <img src="assets/images/client-2.png" width="100px" class="border rounded " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lewsi prewit</h5>
+                            <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label
+                                    for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label
+                                    for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label
+                                    for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label
+                                    for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label
+                                    for="1">☆</label>
+                            </div>
+                            <p>Envarto customer</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                                voluptatibus et inventore quo. Sed perspiciatis odio corporis impedit harum quisquam.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4" style="width: 25rem; height:450px">
+                        <img src="assets/images/client-3.png" width="100px" class="border rounded " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Anie Gomez</h5>
+                            <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label
+                                    for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label
+                                    for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label
+                                    for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label
+                                    for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label
+                                    for="1">☆</label>
+                            </div>
+                            <p>Envato Customer</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quasi,
+                                inventore sequi tenetur tempora voluptatum! Molestiae maxime perferendis possimus
+                                dolores commodi repudiandae ipsum.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="blog mt-5">
+        <div class="container">
+            <h1 class="text-center ul-color pt-5 ">Our latest Blog</h1>
+            <div class="row mt-5 ">
+                <div class="col-md-4">
+                    <div class="card b-card  border rounded p-4" style="width: 25rem; height:450px">
+                        <img src="assets/images/6.JPG" class="card-img-top border rounded " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">UI/UX Design</h5>
+
+                            <p>Envaro customer</p>
+                            <h4>Look Up At The Innovation Ways Team Work</h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card b-card border rounded p-4" style="width: 25rem; height:450px">
+                        <img src="assets/images/7.JPG" class="card-img-top border rounded " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">UI/UX Design</h5>
+
+                            <p>Envarto customer</p>
+                            <h4>Look Up At The Innovation Ways Team Work</h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card b-card border rounded p-4" style="width: 25rem; height:450px">
+                        <img src="assets/images/8.JPG" class="card-img-top border rounded " alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">UI/UX Design</h5>
+
+                            <p>Envato Customer</p>
+                            <h4>Look Up At The Innovation Ways Team Work</h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+    <section class="get-in-touch mt-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <img class="border rounded" src="assets/images/about-thumb.jpg" height="600px" alt="">
+                </div>
+                <div class="col-md-6 ">
+                    <div class="mt-5">
+                        <h1>Get In Touch</h1>
+
+                        <form action="">
+                            <div class="row mt-5  ">
+
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control mb-2" placeholder="First name">
+                                    <input type="text" class="form-control mb-2" placeholder="Email">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                                <div class="col-md-6">
+
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                                        placeholder="Message"></textarea>
+
+                                </div>
+                                <button type="submit" class="btn btn-warning mt-5 ms-3 col-md-3">Send Message</button>
+
+                            </div>
+
+
+                        </form>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="footer mt-5">
+        <div class="container pt-5">
+            <h1 class="text-center">Dipu</h1>
+
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container">
+                    <a class="navbar-brand text-dark" href="#">©Dipu. 2021. All rights reserved.</a>
+
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav  mx-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Home </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Blog </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Contact</a>
+                            </li>
+                        </ul>
+
+                        <span class="navbar-text">
+                            <ul class="navbar-nav  d-flex flex-row text-dark">
+                                <li>
+                                    <a class="nav-link text-dark h4 pe-2" href=" #"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark h4 pe-2" href="#"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark h4" href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+
+                            </ul>
+                        </span>
+
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
